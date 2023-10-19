@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="/img/weather-icon.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Gunakan website ini untuk menemukan informasi cuaca!</p>
+            <form>
+                <input placeholder="Masukan lokasi">
+                <button>Cari Lokasi</button>
+            </form>
+            <p id="pesan-1"></p>
+            <p id="pesan-2"></p>
+        </div>
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>
