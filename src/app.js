@@ -3,6 +3,9 @@ const hbs = require('hbs')
 const path = require('path')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/prediksiCuaca')
+const getBerita = require('./utils/berita')
+const beritaUtils = require('./utils/berita');
+
 // console.log(__dirname)
 // console.log(__filename)
 // console.log(path.join(__dirname, '../public'))
@@ -25,39 +28,28 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index',{
         title: 'Aplikasi Cek Cuaca',
-        name: 'Randi Proska'
+        name: 'Ahmad Reginald Syahiran'
     })
 })
 
 app.get('/tentang', (req, res) => {
     res.render('tentang', {
         title: 'Tentang Saya',
-        name: 'Randi Proska'
+        name: 'Ahmad Reginald Syahiran'
     })
 })
+
 
 app.get('/bantuan', (req, res) => {
     res.render('bantuan', {
         title: 'Bantuan',
         teksBantuan: 'Bantuan apa yang anda butuhkan?',
-        name: 'Randi Proska'
+        name: 'Ahmad Reginald Syahiran'
     })
 })
-// app.get('/', (req, res) => {
-//     res.send(
-//         '<h1>Selamat Datang</h1>'
-//     )
-// })
-// app.get('/bantuan', (req, res) => {
-//     res.send([{
-//         nama: 'Randi Proska',
-//     },{
-//         nama: 'Budi'
-//     }])
-// })
-// app.get('/tentang', (req, res) => {
-//     res.send('<h1>Halaman Tentang</h1>')
-// })
+
+
+
 app.get('/infocuaca', (req, res) => {
     if(!req.query.address){
         return res.send({
@@ -81,22 +73,31 @@ app.get('/infocuaca', (req, res) => {
     })
 })
 
-// app.get('/products', (req, res) => {
-//     if(!req.query.search){
-//         return res.send({
-//             error:'Kamu harus memasukan kata kunci pencarian'
-//         })
-//     }
-//     console.log(req.query.search)
-//     res.send({
-//         products: []
-//     })
-// })
+app.get('/berita', async (req, res) => {
+    const query = 'terbaru';
+
+    try {
+        const articles = await beritaUtils.getBerita(query);
+
+        res.render('berita', {
+            title: 'Berita',
+            articles: articles,
+            name: 'Ahmad Reginald Syahiran'
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Gagal mengambil berita', details: error.message });
+    }
+});
+
+
+
+
 
 app.get('/bantuan/*', (req, res) => {
     res.render('404',{
         title: '404',
-        name: 'Randi Proska',
+        name: 'Ahmad Reginald Syahiran',
         pesanError: 'Belum ada artikel bantuan tersedia'
     })
 })
@@ -104,11 +105,14 @@ app.get('/bantuan/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404',{
         title: '404',
-        name: 'Randi Proska',
+        name: 'Ahmad Reginald Syahiran',
         pesanError: 'Halaman tidak ditemukan'
     })
 })
 
+
+
 app.listen(port, () => {
     console.log('Server is running on port '+ port)
 })
+

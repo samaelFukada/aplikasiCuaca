@@ -11,6 +11,8 @@ const search = document.querySelector('input')
 const pesanSatu = document.querySelector('#pesan-1')
 const pesanDua = document.querySelector('#pesan-2')
 
+
+
 // pesanSatu.textContent = 'From javascript'
 
 weatherform.addEventListener('submit', (e) => {
@@ -31,3 +33,9 @@ weatherform.addEventListener('submit', (e) => {
         })
     })
 })
+
+
+fetch()
+
+
+

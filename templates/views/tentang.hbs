@@ -1,16 +1,232 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Tentang</title>
-        <link rel="icon" href="/img/weather-icon.png">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        <div class="main-content">
-            {{>header}}
-            <img class="portrait" src="/img/ogi.png">
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/img/weather-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap">
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    {{>header}}
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="py-3 clearfix">
+          <h1 class="site-title mb-0" data-aos="fade-right" data-aos-delay="0">Ahmad Reginald Syahiran</h1>
+          <div class="site-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="0"><a class="nav-link" href="https://twitter.com/samaelfukada" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+                </li>
+                <li class="nav-item"data-aos="fade-down" data-aos-delay="100"><a class="nav-link" href="https://www.facebook.com/ahmadreginald666/" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+                </li>
+                <li class="nav-item"data-aos="fade-down" data-aos-delay="200"><a class="nav-link" href="https://www.instagram.com/kulit_ayam666" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
+                </li>
+                <li class="nav-item"data-aos="fade-down" data-aos-delay="300"><a class="nav-link" href="https://github.com/samaelfukada" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        {{>footer}}
-    </body>
+      </div>
+    </header>
+    <div class="page-content">
+      <div class="container">
+<div class="cover shadow-lg bg-white">
+  <div class="cover-bg p-3 p-lg-4 text-white">
+    <div class="row">
+      <div class="col-lg-4 col-md-5">
+        <div class="avatar hover-effect bg-white shadow-sm p-1"><img src="img/jjk.jpg" width="200" height="200"></div>
+      </div>
+      <div class="col-lg-8 col-md-7 text-center text-md-start">
+        <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Ahmad Reginald Syahiran</h2>
+        <p class="typed" data-typed-items="Mahasiswa" data-aos="fade-left" data-aos-delay="100">Mahasiswa Teknik informatika</p>
+        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="#" target="_blank">Download CV</a><a class="btn btn-success shadow-sm mt-1" href="mailto:dlaniger98igo@gmail.com">Hire Me</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-section pt-4 px-3 px-lg-4 mt-1">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="h3 mb-3">Tentang Saya</h2>
+        <p>Halo! Saya Ahmad Reginald Syahiran. Saya memiliki ketertarikan dengan desain UI/UX dan Desain Web. Saya cukup terampil dan menguasai alat Desain Grafis seperti Photoshop dan Sketsa.</p>
+      </div>
+      <div class="col-md-5 offset-md-1">
+        <div class="row mt-2">
+          <div class="col-sm-4">
+            <div class="pb-1">Umur</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="pb-1 text-secondary">20</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="pb-1">Email</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="pb-1 text-secondary">dlaniger98igo@gmail.com</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="pb-1">Telepon</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="pb-1 text-secondary">+6282285244868</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="pb-1">Alamat</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="pb-1 text-secondary">Komplek Jondul 1, Blok J No.16, Padang</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-print-none"/>
+  <div class="skills-section px-3 px-lg-4">
+    <h2 class="h3 mb-3">Keterampilan Profesional</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="mb-2"><span>HTML</span>
+          <div class="progress my-1">
+            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="mb-2"><span>CSS</span>
+          <div class="progress my-1">
+            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="mb-2"><span>JavaScript</span>
+          <div class="progress my-1">
+            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2"><span>Adobe Photoshop</span>
+          <div class="progress my-1">
+            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="mb-2"><span>Sketch</span>
+          <div class="progress my-1">
+            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="mb-2"><span>Adobe XD</span>
+          <div class="progress my-1">
+            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 56%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-print-none"/>
+  <div class="work-experience-section px-3 px-lg-4">
+    <h2 class="h3 mb-4">Pengalaman</h2>
+    <div class="timeline">
+      <div class="timeline-card timeline-card-primary card shadow-sm">
+        <div class="card-body">
+          <div class="h5 mb-1">Web Designer <span class="text-muted h6" href="https://galeryevisongket.online/">Galeri Evi Songket</span></div>
+          <div class="text-muted text-small mb-2">2023</div>
+          <div>Web tersebut merupakan sebuah program kerja KKN di Nagari Halaban, Kabupaten Lima Puluh Kota pada Juli 2023, web ini bertujuan untuk membantu promosi pada para pengrajin songket di Nagari Halaban</div>
+          <div class="d-print-none"><a class="btn btn-success shadow-sm mt-1" href="https://galeryevisongket.online" target="_blank">Galeri Evi Songket</a></div>
+        </div>
+      </div>
+      <div class="timeline-card timeline-card-primary card shadow-sm">
+        <div class="card-body">
+          <div class="h5 mb-1">Pelatihan Sertifikasi MTCNA <span class="text-muted h6">di Universitas Negeri Padang</span></div>
+          <div class="text-muted text-small mb-2">2023 -2026</div>
+          <div>MTCNA atau MikroTik Certified Network Associate adalah sertifikasi yang diberikan oleh MikroTik, sebuah perusahaan yang mengkhususkan diri dalam produksi perangkat keras dan perangkat lunak jaringan. Sertifikasi ini ditujukan untuk insinyur jaringan dan teknisi dan mencakup dasar-dasar MikroTik RouterOS.</div>
+          <div class="d-print-none"><a class="btn btn-success shadow-sm mt-1" href="/templates/views/sertifikat.pdf" target="_blank">Download Sertifikat</a></div>
+        </div>
+      </div>
+      <div class="timeline-card timeline-card-primary card shadow-sm">
+        <div class="card-body">
+          <div class="h5 mb-1">Sekretaris OSIS <span class="text-muted h6">di SMA Negeri 1 Pasaman</span></div>
+          <div class="text-muted text-small mb-2">2018 - 2019</div>
+          <div>Sebagai Sekretaris OSIS di SMA Negeri 1 Pasaman dari tahun 2019 hingga 2020, saya memiliki pengalaman dalam mengelola data organisasi, merencanakan dan melaksanakan berbagai kegiatan sekolah, serta bekerja sama dengan tim eksekutif dan anggota OSIS lainnya.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-print-none"/>
+  <div class="page-break"></div>
+  <div class="education-section px-3 px-lg-4 pb-4">
+    <h2 class="h3 mb-4">Pendidikan</h2>
+    <div class="timeline">
+      <div class="timeline-card timeline-card-success card shadow-sm">
+        <div class="card-body">
+          <div class="h5 mb-1">Program Studi Informatika <span class="text-muted h6">di Universitas Negeri Padang</span></div>
+          <div class="text-muted text-small mb-2">2021 - Sekarang</div>
+          <div>Beberapa bidang yang saya pelajari termasuk Pemrograman, Basis Data, Jaringan Komputer,Sistem Operasi, Keamanan Sistem Informasi, Pengembangan Web & Mobile, Kecerdasan Buatan & Machine Learning</div>
+        </div>
+      </div>
+      <div class="timeline-card timeline-card-success card shadow-sm">
+        <div class="card-body">
+          <div class="h5 mb-1">Jurusan Matematika dan Ilmu Pengetahuan Alam <span class="text-muted h6">di SMA Negeri 1 Pasaman</span></div>
+          <div class="text-muted text-small mb-2">2018 -2021</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-print-none"/>
+  <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
+    <h2 class="h3 text mb-3">Hubungi</h2>
+    <div class="row">
+      <div class="col-md-7 d-print-none">
+        <div class="my-2"><form action="https://formspree.io/your@email.com"
+    method="POST">
+  <div class="row">
+    <div class="col-6">
+      <input class="form-control" type="text" id="name" name="name" placeholder="Nama" required>
+    </div>
+    <div class="col-6">
+      <input class="form-control" type="email" id="email" name="_replyto" placeholder="E-mail" required>
+    </div>
+  </div>
+  <div class="form-group my-2">
+    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"  placeholder="Pesan" required></textarea>
+  </div>
+  <button class="btn btn-primary mt-2" type="submit">Kirim</button>
+</form>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mt-2">
+          <h3 class="h6">Alamat</h3>
+          <div class="pb-2 text-secondary">Komplek Jondul 1, Blok J No.16</div>
+          <h3 class="h6">Telepon</h3>
+          <div class="pb-2 text-secondary">+6282285244868</div>
+          <h3 class="h6">Email</h3>
+          <div class="pb-2 text-secondary">dlaniger98igo@gmail.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+    {{>footer}}
+    <script src="js/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="js/aos.js?ver=1.2.0"></script>
+    <script src="js/main.js?ver=1.2.0"></script>
+  </body>
 </html>

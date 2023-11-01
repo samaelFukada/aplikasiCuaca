@@ -4,13 +4,133 @@
     <head>
         <title>Bantuan</title>
         <link rel="icon" href="/img/weather-icon.png">
-        <link rel="stylesheet" href="/css/style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+        <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+        </noscript>
+        <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+        <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+        <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+        <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+        <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+        </noscript>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <!-- Google Fonts Roboto -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
+        <!-- MDB -->
+        
     </head>
     <body>
         <div class="main-content">
             {{>header}}
-            <p>{{teksBantuan}}</p>
+            <h3 class="text-center mb-4 pb-2 text-primary fw-bold" data-aos="fade-down" data-aos-delay="400">FAQ</h3> 
+            <p class="text-center mb-5">
+            <div class="accordion w-100" id="basicAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Halaman ini digunakan untuk apa?
+                </button>
+                </h2>
+                <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-mdb-parent="#basicAccordion" style="">
+                <div class="accordion-body">
+                    <strong>Halaman Pertanyaan yang Sering Diajukan (FAQ)</strong>, biasanya merupakan kompilasi dari pertanyaan yang paling 
+                    sering ditanyakan oleh pengunjung situs web dan jawaban atas pertanyaan tersebut. Halaman ini digunakan untuk tujuan berikut:
+                    <ol><li>Meningkatkan kenyamanan pengguna: Meningkatkan kenyamanan pengguna dengan memungkinkan pengguna menemukan pertanyaan yang sering diajukan di satu tempat.</li>
+                    <li>Meningkatkan efisiensi layanan pelanggan: Halaman FAQ membantu tim layanan pelanggan Anda mengurangi jumlah pertanyaan berulang yang mereka terima, sehingga mereka dapat fokus pada masalah yang lebih kompleks dan individual.</li>
+                    <li>Meningkatkan kredibilitas: Dengan memberikan jawaban atas pertanyaan yang sering diajukan tentang produk atau layanan Anda, Anda membantu pelanggan mempercayai perusahaan Anda.</li></ol>
+                    Dengan demikian, halaman FAQ adalah bagian penting dari situs web Anda, membantu pengguna untuk lebih memahami produk atau layanan Anda.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Apa itu API
+                </button>
+                </h2>
+                <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-mdb-parent="#basicAccordion" style="">
+                <div class="accordion-body">
+                    <strong>API adalah singkatan dari "Application Programming Interface."</strong>
+                     Ini adalah kumpulan aturan dan protokol yang memungkinkan berbagai perangkat lunak atau komponen perangkat keras untuk berinteraksi satu sama lain. API memungkinkan aplikasi untuk mengakses dan menggunakan layanan, data, atau fungsionalitas dari komponen lain tanpa harus mengetahui detail internal cara komponen tersebut bekerja.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    API apa yang digunakan dalam aplikasi ini?
+                </button>
+                </h2>
+                <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-mdb-parent="#basicAccordion" style="">
+                <div class="accordion-body">
+                    <p><a href="https://mediastack.com"><strong>mediastack</strong></a> <code>ini adalah API yang digunakan untuk menemukan informasi cuaca</code></p>
+                    <p><a href="https://newsapi.org"><strong>newsapi</strong></a> <code>ini adalah API yang digunakan untuk menyediakan berita</code></p>
+
+
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#basicAccordionCollapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Salah satu pola arsitektur API adalah RESTful
+                </button>
+                </h2>
+                <div id="basicAccordionCollapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-mdb-parent="#basicAccordion" style="">
+                <div class="accordion-body">
+                    RESTful (Representational State Transfer) adalah gaya arsitektur perangkat lunak yang digunakan dalam pengembangan aplikasi web.
+                    <img src="img/3_RESTful_Ahmad Reginald Syahiran.png" height="147" width="640">
+                    <h1>Penjelasan Diagram Arsitektur RESTful API</h1>
+                    <p><strong>1. RESTful Client (Client Application):</strong></p>
+                    <p>Ini adalah aplikasi klien yang ingin berinteraksi dengan RESTful API. Aplikasi ini dapat berupa aplikasi web, perangkat mobile, atau perangkat lain yang mengirimkan permintaan HTTP ke server RESTful API.</p>
+
+                    <p><strong>2. RESTful API Server:</strong></p>
+                    <p>Ini adalah server yang menyediakan layanan berbasis RESTful API kepada klien. Ketika menerima permintaan HTTP dari klien, server RESTful API memproses permintaan tersebut dengan melibatkan logika bisnis yang sesuai. Server RESTful API juga dapat berinteraksi dengan database untuk mengambil atau menyimpan data yang diperlukan. Setelah pemrosesan selesai, server RESTful API mengirimkan respons HTTP ke klien, yang berisi hasil operasi atau data yang diminta.</p>
+
+                    <p><strong>3. Business Logic:</strong></p>
+                    <p>Ini adalah lapisan dalam server RESTful API yang mengandung logika bisnis aplikasi. Di sini, proses bisnis utama seperti validasi data, perhitungan, dan logika aplikasi lainnya dijalankan.</p>
+
+                    <p><strong>4. Database:</strong></p>
+                    <p>Database digunakan oleh server RESTful API untuk mengakses atau menyimpan data yang dibutuhkan oleh logika bisnis. Server RESTful API dapat melakukan operasi pada database seperti mengambil data, memperbarui data, atau menyimpan data baru sesuai dengan permintaan HTTP yang diterima.</p>
+
+                    <p>Diagram ini memberikan gambaran umum tentang bagaimana komunikasi berbasis RESTful API berlangsung antara klien dan server, serta peran logika bisnis dan interaksi dengan database dalam proses tersebut.</p>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
+
         {{>footer}}
+        <script src="/js/app.js"></script>
+        <script src="js/bootstrap.bundle.min.js?ver=1.2.0"></script>
+        <script src="js/aos.js?ver=1.2.0"></script>
+        <script src="js/main.js?ver=1.2.0"></script>
+        <script type="text/javascript" src="js/mdb.min.js"></script>
     </body>
 </html>
